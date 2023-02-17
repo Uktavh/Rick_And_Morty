@@ -1,38 +1,102 @@
 .App {
-  text-align: center;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   ;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ html {
+   background-image: url("./space.webp");
+   background-size:100%;
+   background-repeat:repeat;
+   width: 100%;
+   }
+
+   body {
+      width: 100%;
+      background-image: url("./5.gif");
+      background-repeat:repeat;
+      background-size: 50%;
+      min-height:100vh
+    }
+
+ .cardyy {
+   display:flex;
+   align-content: center;
+ }
+
+ .divPrim {
+   margin-top: 10rem;
+ }
+
+
+/* .divSearch {
+   margin-top: 40px;
+} */
+
+.divCards {
+   margin-top: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* .parpadea {
+   font-family: consolas;
+   animation-name: parpadeo;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+ 
+ } 
+ 
+ @keyframes parpadeo {  
+   0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+ }
+
+*/
+.hidden {
+   opacity: 0;
+   filter: blur (5px);
+   transform: translateX(-100%);
+   transition: all 1s;
+ 
+ }
+ 
+ .show {
+   opacity: 1;
+   filter: blur (0);
+   transform: translateX(0);
+ }
+
+ .w {
+   perspective: 500px;
+   transform: rotatex(10deg);
+   animation: rotateAngle 6s linear infinite;
+   margin: auto;
+   width: auto;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .b {
+   display: block;
+   position: relative;
+   margin: 0.5em 0;
+   padding: 0.8em 2.2em;
+   cursor: pointer;
+   background: #FFFFFF;
+   border: none;
+   border-radius: 0.4em;
+   text-transform: uppercase;
+   font-size: 19px;
+   font-family: "Work Sans", sans-serif;
+   font-weight: 500;
+   letter-spacing: 0.04em;
+   mix-blend-mode: color-dodge;
+   perspective: 500px;
+   transform-style: preserve-3d;
   }
-  to {
-    transform: rotate(360deg);
+
+  .color{
+    background-color: aqua;
+    width: 100%;
   }
-}
