@@ -9,7 +9,7 @@ import { useState } from 'react';
 export default function Card({name,gender,onClose,species,image,id}) {
 
    const dispatch = useDispatch()
-   const favos = useSelector(state => state.favos)
+   const favos = useSelector(state => state.favorites)
    const [favo,setFavo] = useState(false)
    
    const handleFavo = () => {
@@ -24,12 +24,12 @@ export default function Card({name,gender,onClose,species,image,id}) {
    }
 
    useEffect(()=>{
-      favos.forEach((fav)=>{
-         if (fav.id === id){
+      favos.forEach((favs)=>{
+         if (favs.id === id){
             setFavo(true)
          }
       })
-   })
+   }, [favos])
    
    return (
       <div>

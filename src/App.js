@@ -76,6 +76,7 @@ function App () {
           <Route path='/detail/:detailId' element={<Detail />} ></Route>
           <Route path='/:anything' element={<E404 />}></Route>
           <Route path='/home' element={<Welcome/>}></Route>
+          <Route path='/favorites' element={<Favos />} ></Route>
         </Routes>
     </div>
   )

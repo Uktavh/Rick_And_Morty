@@ -7,7 +7,7 @@ const Welcome = () => {
         <div className={s.main}>
         
         <div className={s.submain} >
-            <div className={s.logo}><img src={welc} className={`${s.parpadea} ${s.img}`} ></img></div>
+            <div className={s.logo}><img alt ='heady' src={welc} className={`${s.parpadea} ${s.img}`} ></img></div>
         <div className={s.tuti}>
 
         <h1>LET ME SHOW U WHAT I GOT</h1>

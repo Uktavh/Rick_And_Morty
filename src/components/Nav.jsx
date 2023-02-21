@@ -24,6 +24,11 @@ return (
         </button> }
 
 
+        {location.pathname=== '/cards'? <button className={s.button} >
+            <Link className={s.link} to='/favorites' >FAVOS</Link>
+        </button> : <div></div>}
+
+
         {location.pathname=== '/home'? <div/>:        <button className={s.button} >
             <Link className={s.link} to='/home' >HOME</Link>
         </button> }
